@@ -49,7 +49,7 @@ def verify_args():
         print("Run via: python .\\BlockRandomizer.py start_slot end_slot")
         sys.exit(1)
 
-    default_delay = .1
+    default_delay = .2
     if len(sys.argv) == 4:
         default_delay = sys.argv[3]
 
@@ -57,7 +57,7 @@ def verify_args():
     if int(sys.argv[1]) in range(1,10):
         # check that start_slot+1 < end_slot < 10
         if int(sys.argv[2]) in range(int(sys.argv[1])+1, 10):
-            return int(sys.argv[1]), int(sys.argv[2]), int(default_delay)
+            return int(sys.argv[1]), int(sys.argv[2]), float(default_delay)
         else:
             sys.exit(f"Invalid end_slot: start_slot < {sys.argv[2]} < 10")
 
