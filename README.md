@@ -13,3 +13,5 @@ The ```delay``` parameter is optional and determines how long (in seconds) to wa
 
 To run with picking slots 2->9 with .25 second delay:
 ```script/location/BlockRandomizer.py 2 9 .25```
+
+To run without a shell, change the extension from ```.py``` to ```.pyw```. This tells the python interpreter to run without a shell open.

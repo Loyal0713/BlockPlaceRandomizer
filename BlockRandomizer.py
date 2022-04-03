@@ -33,10 +33,10 @@ def on_release(key):
     if key == Key.f10:
         global generate_random_num
         generate_random_num = not generate_random_num
-        print(f"randomize: {generate_random_num}")
+        print(f"randomize state: {generate_random_num}")
     # exit
     if key == Key.esc:
-        print("Exiting program!")
+        print("exiting program!")
         global stop_program
         stop_program = True
 
